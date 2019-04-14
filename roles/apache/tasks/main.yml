@@ -12,8 +12,9 @@
 
     - name: Deploy the project on apache
       copy:
-        src: index.html
         dest: /var/www/html/index.html
+        content: |
+        <h1> Deployed by Ansible Tower </h1>
 
     - name: Restart Apache
       service:
