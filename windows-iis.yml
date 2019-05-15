@@ -25,6 +25,13 @@
         name: ansible
         password: "Welcome123!"
         state: present
+        
+    - name: Add user to Remote Desktop group
+      win_group_membership:
+        name: Remote Desktop Users
+        members:
+          - ansible
+        state: present
    
     
     
