@@ -23,7 +23,7 @@
     - name: Add User
       win_user:
         name: ansible
-        password: "ansible"
+        password: "Welcome123!"
         state: present
    
     
