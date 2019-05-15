@@ -19,4 +19,12 @@
       win_copy:
         dest: 'C:\inetpub\wwwroot\index.html'
         content: "<h1> F5 LTM-1 - Deployed by Ansible Tower on {{ansible_hostname}} </h1>"
+        
+    - name: Add User
+      win_user:
+        name: ansible
+        password: "ansible"
+        state: present
+   
+    
     
